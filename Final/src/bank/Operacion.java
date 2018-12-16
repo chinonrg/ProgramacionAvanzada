@@ -2,7 +2,8 @@ package bank;
 import database.Cuenta;
 
 public abstract class Operacion {
-
+	
+	private Atm atm;
 	private Cuenta cuenta;
 	protected static int idOperacion = 0;
 	
