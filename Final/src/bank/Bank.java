@@ -1,6 +1,6 @@
 package bank;
 
-public class bank {
+public class Bank {
 	private Atm atm;
 	
 	public void cierreBanco(Atm atm) {
