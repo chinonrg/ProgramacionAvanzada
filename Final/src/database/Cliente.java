@@ -3,16 +3,21 @@ package database;
 public class Cliente {
 	
 	private String nombre;
-	private Cuenta cuenta;
+	private int numeroCuenta, nip;
+	private double balance;
 	
-	public Cliente(Cuenta c, String n) {
+	private Cuenta cuenta = new Cuenta(balance, numeroCuenta, nip);
+	
+	public Cliente(String n, int nc, int nip, double balance) {
 		this.nombre = n;
-		this.cuenta = c;
+		this.numeroCuenta = nc;
+		this.nip = nip;
+		this.balance = balance;
 	}
 
 	public String getNombre() {
 		return nombre;
-	}
+	} 
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -23,5 +28,7 @@ public class Cliente {
 		return "Cliente [nombre=" + nombre + "]";
 	}
 	
-	
+	public Cuenta verCuenta() {
+		return cuenta;
+	}
 }
