@@ -9,6 +9,6 @@ public class Deposito extends Operacion {
 		System.out.println("Se ha depositado $" + monto);
 		cuenta.setBalance(montoDep);
 		System.out.println("El balance de su cuenta es $" + montoDep);
-		idOperacion++;
+		idOperacion++; 
 	}
 }
